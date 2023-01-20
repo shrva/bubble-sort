@@ -1,0 +1,50 @@
+#include<stdio.h>
+void accept(int a[10],int n);
+void display(int a[10],int n);
+void Bsort(int a[10],int n);
+void main()
+{ 
+
+int n,a[10];
+printf("\n enter how many array element");
+scanf("%d",&n);
+accept(a,n);
+printf("\n sorted list");
+display(a,n);
+}
+void accept(int a[10],int n)
+{
+int i;
+printf("\n enter array elements:");
+for(i=0;i<n;i++)
+{
+scanf("%d",&a[i]);
+
+}
+}
+void display(int a[10],int n);
+{
+int i;
+for(i=0;i<n;i++)
+{
+printf("\t %d",a[i]);
+}
+}
+void Bsort(int a[10],int n)
+{
+int i,j,temp;
+for(i=1;i<n;i++)
+{
+for(j=0;j<n-1;J++)
+{
+if(a[j]>a[j+1])
+{
+temp=a[i];
+a[j]=a[J+1];
+a[J+1]=temp;
+}
+}
+printf("\n pax:%d=",i);
+display(a,n);
+}
+}
